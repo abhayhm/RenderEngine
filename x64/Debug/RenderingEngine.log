@@ -1,4 +1,5 @@
 ﻿  display.c
   Main.c
+  vector.c
   Generating Code...
   RenderingEngine.vcxproj -> C:\repos\RenderingEngine\x64\Debug\RenderingEngine.exe
