@@ -10,6 +10,12 @@
 ////////////////////////////////////////////////////////////////////////////////////////////
 #define N_POINTS  (9 * 9 * 9)
 vect3_t cube_points[N_POINTS];
+vect2_t projected_points[N_POINTS];
+
+vect3_t camera_position = { .x = 0, .y = 0, .z = -5 };
+vect3_t cube_rotation = { .x = 0, .y = 0, .z = 0 };
+
+float fov_factor = 640;
 
 bool is_running = false;
 
@@ -54,21 +60,57 @@ void process_input(void) {
     }
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////
+// Function that receives 3d vector and transforms to 2d (orthographic projection)
+////////////////////////////////////////////////////////////////////////////////////////////
+vect2_t project(vect3_t point) {
+    vect2_t projected_point = {
+        .x = (fov_factor * point.x) / point.z,
+        .y = (fov_factor * point.y) / point.z
+    };
+
+    return projected_point;
+}
+
 void update(void) {
-    // TODO:
+
+    cube_rotation.x += 0.01;
+    cube_rotation.y += 0.01;
+    cube_rotation.z += 0.01;
+
+    for (int i = 0; i < N_POINTS; i++) {
+        vect3_t point = cube_points[i];
+
+        vect3_t transformed_point = vect3_rotate_x(point, cube_rotation.x);
+        transformed_point = vect3_rotate_y(transformed_point, cube_rotation.y);
+        transformed_point = vect3_rotate_z(transformed_point, cube_rotation.z);
+
+        // Move the points away from the camera
+        transformed_point.z -= camera_position.z;
+
+        // Project the current point and save in 2d vector
+        vect2_t projected_point = project(transformed_point);
+        projected_points[i] = projected_point;
+    }
 }
 
 void render(void) {
-    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
-    SDL_RenderClear(renderer);
+    draw_grid(0xFF444444);
 
-    draw_grid(0xFF00FF00);
+    // Loop all projected points and render them
+    for (int i = 0; i < N_POINTS; i++) {
+        vect2_t projected_point = projected_points[i];
+        draw_rect(
+            projected_point.x + (window_width / 2),
+            projected_point.y + (window_height / 2),
+            4,
+            4,
+            0xFFFFFF00
+        );
+    }
 
-    draw_pixel(20, 20, 0xFFFFFF00);
-    draw_rect(300, 200, 300, 150, 0xFFFF00FF);
-    
     render_color_buffer();
-    clear_color_buffer(0x00000000);
+    clear_color_buffer(0xFF000000);
 
     SDL_RenderPresent(renderer);
 }

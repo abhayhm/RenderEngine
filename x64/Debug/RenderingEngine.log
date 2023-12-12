@@ -1,5 +1,8 @@
-﻿  display.c
-  Main.c
-  vector.c
-  Generating Code...
+﻿  vector.c
+C:\repos\RenderingEngine\vector.c(7,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(8,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(15,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(17,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(23,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(24,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   RenderingEngine.vcxproj -> C:\repos\RenderingEngine\x64\Debug\RenderingEngine.exe
