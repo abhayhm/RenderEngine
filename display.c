@@ -20,14 +20,12 @@ bool initialize_window(void) {
         return false;
     }
 
-    // Use SDL query what is the fullscreen width and height
     SDL_DisplayMode display_mode;
     SDL_GetCurrentDisplayMode(0, &display_mode);
 
     window_width = display_mode.w;
     window_height = display_mode.h;
 
-    // Create a SDL Window
     window = SDL_CreateWindow(
         NULL,
         SDL_WINDOWPOS_CENTERED,
@@ -41,7 +39,6 @@ bool initialize_window(void) {
         return false;
     }
 
-    // Create a SDL renderer
     renderer = SDL_CreateRenderer(window, -1, 0);
     if (!renderer) {
         fprintf(stderr, "Error creating SDL renderer.\n");
@@ -75,20 +72,20 @@ void draw_line(int x0, int y0, int x1, int y1, uint32_t color) {
     float x_inc = delta_x / (float)longest_side_length;
     float y_inc = delta_y / (float)longest_side_length;
 
-    float current_x = x0;
-    float current_y = y0;
+    float current_x = (float)x0;
+    float current_y = (float)y0;
 
     for (int i = 0; i <= longest_side_length; i++) {
-        draw_pixel(round(current_x), round(current_y), color);
+        draw_pixel((int)round(current_x), (int)round(current_y), color);
         current_x += x_inc;
         current_y += y_inc;
     }
 }
 
 void draw_triangle(triangle_t triangle, uint32_t color) {
-    draw_line(triangle.points[0].x, triangle.points[0].y, triangle.points[1].x, triangle.points[1].y, color);
-    draw_line(triangle.points[1].x, triangle.points[1].y, triangle.points[2].x, triangle.points[2].y, color);
-    draw_line(triangle.points[2].x, triangle.points[2].y, triangle.points[0].x, triangle.points[0].y, color);
+    draw_line((int)triangle.points[0].x, (int)triangle.points[0].y, (int)triangle.points[1].x, (int)triangle.points[1].y, color);
+    draw_line((int)triangle.points[1].x, (int)triangle.points[1].y, (int)triangle.points[2].x, (int)triangle.points[2].y, color);
+    draw_line((int)triangle.points[2].x, (int)triangle.points[2].y, (int)triangle.points[0].x, (int)triangle.points[0].y, color);
 }
 
 void draw_rect(int x, int y, int width, int height, uint32_t color) {
@@ -120,7 +117,6 @@ void clear_color_buffer(uint32_t color) {
 }
 
 void destroy_window(void) {
-    free(color_buffer);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();

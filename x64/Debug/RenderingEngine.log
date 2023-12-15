@@ -1,12 +1,4 @@
 ﻿  Main.c
-C:\repos\RenderingEngine\Main.c(68,25): warning C4047: '=': 'uint32_t' differs in levels of indirection from 'Uint32 (__cdecl *)(void)'
-C:\repos\RenderingEngine\Main.c(70,28): warning C4305: '+=': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(71,28): warning C4305: '+=': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(72,28): warning C4305: '+=': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(108,37): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(108,59): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(109,37): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(109,59): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(110,37): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(110,59): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(63,25): warning C4047: '=': 'uint32_t' differs in levels of indirection from 'Uint32 (__cdecl *)(void)'
+C:\repos\RenderingEngine\Main.c(72,32): warning C4018: '<': signed/unsigned mismatch
   RenderingEngine.vcxproj -> C:\repos\RenderingEngine\x64\Debug\RenderingEngine.exe
