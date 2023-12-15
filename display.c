@@ -1,5 +1,5 @@
 #include "display.h"
-
+#include "triangle.h"
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -64,6 +64,31 @@ void draw_pixel(int x, int y, uint32_t color) {
     if (x >= 0 && x < window_width && y >= 0 && y < window_height){
         color_buffer[(window_width * y) + x] = color;
     }
+}
+
+void draw_line(int x0, int y0, int x1, int y1, uint32_t color) {
+    int delta_x = x1 - x0;
+    int delta_y = y1 - y0;
+
+    int longest_side_length = abs(delta_x) > abs(delta_y) ? abs(delta_x) : abs(delta_y);
+
+    float x_inc = delta_x / (float)longest_side_length;
+    float y_inc = delta_y / (float)longest_side_length;
+
+    float current_x = x0;
+    float current_y = y0;
+
+    for (int i = 0; i <= longest_side_length; i++) {
+        draw_pixel(round(current_x), round(current_y), color);
+        current_x += x_inc;
+        current_y += y_inc;
+    }
+}
+
+void draw_triangle(triangle_t triangle, uint32_t color) {
+    draw_line(triangle.points[0].x, triangle.points[0].y, triangle.points[1].x, triangle.points[1].y, color);
+    draw_line(triangle.points[1].x, triangle.points[1].y, triangle.points[2].x, triangle.points[2].y, color);
+    draw_line(triangle.points[2].x, triangle.points[2].y, triangle.points[0].x, triangle.points[0].y, color);
 }
 
 void draw_rect(int x, int y, int width, int height, uint32_t color) {

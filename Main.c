@@ -105,9 +105,7 @@ void render(void) {
     // Loop all projected triangles and render them
     for (unsigned int i = 0; i < N_MESH_FACES; i++) {
         triangle_t triangle = triangles_to_render[i];
-        draw_rect(triangle.points[0].x, triangle.points[0].y, 3, 3, 0xFFFFFF00);
-        draw_rect(triangle.points[1].x, triangle.points[1].y, 3, 3, 0xFFFFFF00);
-        draw_rect(triangle.points[2].x, triangle.points[2].y, 3, 3, 0xFFFFFF00);
+        draw_triangle(triangle, 0xFFFFFF00);
     }
 
     render_color_buffer();

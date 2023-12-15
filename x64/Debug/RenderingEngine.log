@@ -9,6 +9,4 @@ C:\repos\RenderingEngine\Main.c(109,37): warning C4244: 'function': conversion f
 C:\repos\RenderingEngine\Main.c(109,59): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
 C:\repos\RenderingEngine\Main.c(110,37): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
 C:\repos\RenderingEngine\Main.c(110,59): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-  mesh.c
-  Generating Code...
   RenderingEngine.vcxproj -> C:\repos\RenderingEngine\x64\Debug\RenderingEngine.exe
