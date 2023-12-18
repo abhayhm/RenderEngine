@@ -51,4 +51,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\models\cube.obj">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="assets\models\f22.obj">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

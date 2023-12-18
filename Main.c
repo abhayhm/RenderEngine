@@ -26,7 +26,7 @@ void setup(void) {
         window_width,
         window_height
     );
-    load_cube_mesh_data();
+    load_obj_file_data("./assets/models/f22.obj");
 }
 
 void process_input(void) {
@@ -60,16 +60,16 @@ void update(void) {
         SDL_Delay(time_to_wait);
     }
     
-    previous_frame_time = SDL_GetTicks;
+    previous_frame_time = (uint32_t)SDL_GetTicks;
 
     triangles_to_render = NULL;
 
     mesh.rotation.x += 0.01f;
-    mesh.rotation.y += 0.01f;
-    mesh.rotation.z += 0.01f;
+    mesh.rotation.y += 0.00f;
+    mesh.rotation.z += 0.00f;
 
     int num_faces = array_length(mesh.faces);
-    for (unsigned int i = 0; i < num_faces; i++) {
+    for (int i = 0; i < num_faces; i++) {
         face_t mesh_face = mesh.faces[i];
         vect3_t face_vertices[3];
         face_vertices[0] = mesh.vertices[mesh_face.a - 1];
@@ -78,7 +78,7 @@ void update(void) {
 
         triangle_t projected_triangle;
 
-        for (unsigned int j = 0; j < 3; j++) {
+        for (int j = 0; j < 3; j++) {
             vect3_t transformed_vertex = face_vertices[j];
             transformed_vertex = vect3_rotate_x(transformed_vertex, mesh.rotation.x);
             transformed_vertex = vect3_rotate_y(transformed_vertex, mesh.rotation.y);

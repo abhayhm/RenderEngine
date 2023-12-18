@@ -1,4 +1,2 @@
-﻿  Main.c
-C:\repos\RenderingEngine\Main.c(63,25): warning C4047: '=': 'uint32_t' differs in levels of indirection from 'Uint32 (__cdecl *)(void)'
-C:\repos\RenderingEngine\Main.c(72,32): warning C4018: '<': signed/unsigned mismatch
+﻿  mesh.c
   RenderingEngine.vcxproj -> C:\repos\RenderingEngine\x64\Debug\RenderingEngine.exe
