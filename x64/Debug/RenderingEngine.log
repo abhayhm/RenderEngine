@@ -1,2 +1,3 @@
-﻿  mesh.c
+﻿  Main.c
+C:\repos\RenderingEngine\Main.c(63,49): warning C4311: 'type cast': pointer truncation from 'Uint32 (__cdecl *)(void)' to 'uint32_t'
   RenderingEngine.vcxproj -> C:\repos\RenderingEngine\x64\Debug\RenderingEngine.exe

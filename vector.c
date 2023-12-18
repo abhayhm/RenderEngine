@@ -41,6 +41,13 @@ float vect2_dot(vect2_t a, vect2_t b) {
 	return (float)((a.x * b.x) + (a.y * b.y));
 }
 
+void vect2_normalize(vect2_t* v) {
+	float vector_magnitude = vect2_length(*v);
+
+	v->x /= vector_magnitude;
+	v->y /= vector_magnitude;
+}
+
 /////////////////////////////////////////////////////////////////
 float vect3_length(vect3_t v) {
 	return (float)(sqrt((v.x * v.x) + (v.y * v.y) + (v.z * v.z)));
@@ -93,6 +100,14 @@ vect3_t vect3_cross(vect3_t a, vect3_t b) {
 
 float vect3_dot(vect3_t a, vect3_t b) {
 	return (float)((a.x * b.x) + (a.y * b.y) + (a.z * b.z));
+}
+
+void vect3_normalize(vect3_t* v) {
+	float vector_magnitude = vect3_length(*v);
+
+	v->x /= vector_magnitude;
+	v->y /= vector_magnitude;
+	v->z /= vector_magnitude;
 }
 
 ///////////////////////////////////////////////////////////
