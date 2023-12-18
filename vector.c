@@ -1,6 +1,101 @@
 #include <math.h>
 #include "vector.h"
 
+float vect2_length(vect2_t v) {
+	return (float)(sqrt((v.x * v.x) + (v.y * v.y)));
+}
+
+vect2_t vect2_add(vect2_t a, vect2_t b) {
+	vect2_t v = {
+		.x = a.x + b.x,
+		.y = a.y + b.y 
+	};
+	return v;
+}
+
+vect2_t vect2_sub(vect2_t a, vect2_t b) {
+	vect2_t v = {
+		.x = a.x - b.x,
+		.y = a.y - b.y
+	};
+	return v;
+}
+
+vect2_t vect2_mul(vect2_t v, float f) {
+	vect2_t result = {
+		.x = v.x * f,
+		.y = v.y * f
+	};
+	return result;
+}
+
+vect2_t vect2_div(vect2_t v, float f) {
+	vect2_t result = {
+		.x = v.x / f,
+		.y = v.y / f
+	};
+	return result;
+}
+
+float vect2_dot(vect2_t a, vect2_t b) {
+	return (float)((a.x * b.x) + (a.y * b.y));
+}
+
+/////////////////////////////////////////////////////////////////
+float vect3_length(vect3_t v) {
+	return (float)(sqrt((v.x * v.x) + (v.y * v.y) + (v.z * v.z)));
+}
+
+vect3_t vect3_add(vect3_t a, vect3_t b) {
+	vect3_t v = {
+		.x = a.x + b.x,
+		.y = a.y + b.y,
+		.z = a.z + b.z
+	};
+	return v;
+}
+
+vect3_t vect3_sub(vect3_t a, vect3_t b) {
+	vect3_t v = {
+		.x = a.x - b.x,
+		.y = a.y - b.y,
+		.z = a.z - b.z
+	};
+	return v;
+}
+
+vect3_t vect3_mul(vect3_t v, float f) {
+	vect3_t result = {
+		.x = v.x * f,
+		.y = v.y * f,
+		.z = v.z * f
+	};
+	return result;
+}
+
+vect3_t vect3_div(vect3_t v, float f) {
+	vect3_t result = {
+		.x = v.x / f,
+		.y = v.y / f,
+		.z = v.z / f
+	};
+	return result;
+}
+
+vect3_t vect3_cross(vect3_t a, vect3_t b) {
+	vect3_t v = {
+		.x = (a.y * b.z) - (a.z * b.y),
+		.y = (a.z * b.x) - (a.x * b.z),
+		.z = (a.x * b.y) - (a.y * b.x)
+	};
+	return v;
+}
+
+float vect3_dot(vect3_t a, vect3_t b) {
+	return (float)((a.x * b.x) + (a.y * b.y) + (a.z * b.z));
+}
+
+///////////////////////////////////////////////////////////
 vect3_t vect3_rotate_x(vect3_t v, float angle){
 	vect3_t rotated_vector = {
 		.x = v.x,
