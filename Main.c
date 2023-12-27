@@ -125,7 +125,8 @@ void render(void) {
 
     int num_triangles = array_length(triangles_to_render);
     for (int i = 0; i < num_triangles; i++) {
-        draw_triangle(triangles_to_render[i], 0xFFFFFF00);
+        draw_filled_triangle(triangles_to_render[i], 0xFFFFFFFF);
+        draw_triangle(triangles_to_render[i], 0xFF000000);
     }
 
     array_free(triangles_to_render);
