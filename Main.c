@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <SDL.h>
@@ -16,6 +17,15 @@ float fov_factor = 640;
 bool is_running = false;
 uint32_t previous_frame_time = 0;
 
+int compare_avg_z(const void *a, const void *b) {
+    if (((triangle_t*)a)->avg_depth < ((triangle_t*)b)->avg_depth) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+
 void setup(void) {
     reneder_method = RENDER_WIRE;
     cull_method = CULL_BACKFACE;
@@ -29,7 +39,9 @@ void setup(void) {
         window_width,
         window_height
     );
-    load_obj_file_data("./assets/models/cube.obj");
+
+    load_cube_mesh_data();
+    //load_obj_file_data("./assets/models/cube.obj");
 }
 
 void process_input(void) {
@@ -136,27 +148,45 @@ void update(void) {
             if (0 > dot_normal_camera) continue;
         }
 
-        triangle_t projected_triangle;
+        vect2_t projected_points[3];
 
         for (int j = 0; j < 3; j++) {
-            vect2_t projected_point = project(transformed_vertices[j]);
+            projected_points[j] = project(transformed_vertices[j]);
 
-            projected_point.x += (window_width / 2);
-            projected_point.y += (window_height / 2);
-
-            projected_triangle.points[j] = projected_point;
+            projected_points[j].x += (window_width / 2);
+            projected_points[j].y += (window_height / 2);
         }
+
+        float avg_depth = (transformed_vertices[0].z + transformed_vertices[1].z + transformed_vertices[2].z) / 3.0;
+
+        triangle_t projected_triangle = {
+            .points = {
+                { projected_points[0].x, projected_points[0].y },
+                { projected_points[1].x, projected_points[1].y },
+                { projected_points[2].x, projected_points[2].y }
+            },
+            .color = mesh_face.color,
+            .avg_depth = avg_depth
+        };
         array_push(triangles_to_render, projected_triangle);
+    }
+    if (NULL != triangles_to_render) {
+        qsort(
+            triangles_to_render,
+            array_length(triangles_to_render),
+            sizeof(triangles_to_render[0]),
+            compare_avg_z
+        );
     }
 }
 
 void render(void) {
-    //draw_grid(0xFF444444);
+    draw_grid(0xFF444444);
 
     int num_triangles = array_length(triangles_to_render);
     for (int i = 0; i < num_triangles; i++) {
         if (RENDER_FILL_TRIANGLE == reneder_method || RENDER_FILL_TRIANGLE_WIRE == reneder_method) {
-            draw_filled_triangle(triangles_to_render[i], 0xFF555555);
+            draw_filled_triangle(triangles_to_render[i]);
         }
         if (RENDER_WIRE_VERTEX == reneder_method) {
             for (int j = 0; j < 3; j++) {
