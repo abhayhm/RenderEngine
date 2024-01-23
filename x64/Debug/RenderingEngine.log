@@ -1,13 +1,14 @@
 ﻿  Main.c
-C:\repos\RenderingEngine\Main.c(104,49): warning C4311: 'type cast': pointer truncation from 'Uint32 (__cdecl *)(void)' to 'uint32_t'
-C:\repos\RenderingEngine\Main.c(108,28): warning C4305: '+=': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(109,28): warning C4305: '+=': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(110,28): warning C4305: '+=': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(111,26): warning C4305: '+=': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(112,26): warning C4305: '+=': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(113,31): warning C4305: '+=': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(182,111): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(215,62): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(215,102): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(219,51): warning C4020: 'draw_triangle': too many actual parameters
+C:\repos\RenderingEngine\Main.c(43,11): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\repos\RenderingEngine\Main.c(45,11): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\repos\RenderingEngine\Main.c(100,49): warning C4311: 'type cast': pointer truncation from 'Uint32 (__cdecl *)(void)' to 'uint32_t'
+C:\repos\RenderingEngine\Main.c(104,28): warning C4305: '+=': truncation from 'double' to 'float'
+C:\repos\RenderingEngine\Main.c(174,38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(175,38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(177,38): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(178,38): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(181,111): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(214,62): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(214,102): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(218,51): warning C4020: 'draw_triangle': too many actual parameters
   RenderingEngine.vcxproj -> C:\repos\RenderingEngine\x64\Debug\RenderingEngine.exe
