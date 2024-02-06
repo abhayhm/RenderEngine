@@ -1,14 +1,53 @@
 ﻿  Main.c
-C:\repos\RenderingEngine\Main.c(44,11): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(46,11): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(101,49): warning C4311: 'type cast': pointer truncation from 'Uint32 (__cdecl *)(void)' to 'uint32_t'
+C:\repos\RenderingEngine\Main.c(47,11): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\repos\RenderingEngine\Main.c(49,11): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\repos\RenderingEngine\Main.c(105,29): warning C4305: '+=': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(167,38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(168,38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(170,38): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(171,38): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(174,111): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(211,62): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(211,102): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(215,51): warning C4020: 'draw_triangle': too many actual parameters
-  RenderingEngine.vcxproj -> C:\repos\RenderingEngine\x64\Debug\RenderingEngine.exe
+C:\repos\RenderingEngine\Main.c(190,38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(191,38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(194,38): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(195,38): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(199,111): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(251,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(251,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(252,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(252,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(253,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(253,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(261,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(261,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(262,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(262,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(263,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(263,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(270,44): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(270,70): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(271,44): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(271,70): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(272,44): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(272,70): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(298,16): warning C4026: function declared with formal parameter list
+  mesh.c
+C:\repos\RenderingEngine\mesh.c(59,12): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\repos\RenderingEngine\mesh.c(66,13): error C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\repos\RenderingEngine\mesh.c(74,13): error C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  triangle.c
+C:\repos\RenderingEngine\triangle.c(34,19): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(34,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(29,21): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(30,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(64,19): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(64,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(59,21): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(60,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  vector.c
+C:\repos\RenderingEngine\vector.c(8,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(48,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(57,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(110,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(118,31): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(119,31): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(126,31): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(128,32): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(135,31): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\vector.c(136,31): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
