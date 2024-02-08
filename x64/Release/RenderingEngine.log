@@ -1,0 +1,27 @@
+﻿  triangle.c
+C:\repos\RenderingEngine\triangle.c(29,19): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(29,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(24,21): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(25,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(59,19): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(59,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(54,21): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(55,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(180,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(180,27): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(246,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(246,28): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(247,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(247,28): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(248,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(248,28): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\repos\RenderingEngine\triangle.c(261,30): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(262,28): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(286,30): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\triangle.c(287,28): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Generating code
+  0 of 49 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  RenderingEngine.vcxproj -> C:\repos\RenderingEngine\x64\Release\RenderingEngine.exe

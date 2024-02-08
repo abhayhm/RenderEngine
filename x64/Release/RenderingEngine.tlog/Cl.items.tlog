@@ -1,0 +1,10 @@
+C:\repos\RenderingEngine\array.c;C:\repos\RenderingEngine\x64\Release\array.obj
+C:\repos\RenderingEngine\display.c;C:\repos\RenderingEngine\x64\Release\display.obj
+C:\repos\RenderingEngine\light.c;C:\repos\RenderingEngine\x64\Release\light.obj
+C:\repos\RenderingEngine\Main.c;C:\repos\RenderingEngine\x64\Release\Main.obj
+C:\repos\RenderingEngine\matrix.c;C:\repos\RenderingEngine\x64\Release\matrix.obj
+C:\repos\RenderingEngine\mesh.c;C:\repos\RenderingEngine\x64\Release\mesh.obj
+C:\repos\RenderingEngine\swap.c;C:\repos\RenderingEngine\x64\Release\swap.obj
+C:\repos\RenderingEngine\texture.c;C:\repos\RenderingEngine\x64\Release\texture.obj
+C:\repos\RenderingEngine\triangle.c;C:\repos\RenderingEngine\x64\Release\triangle.obj
+C:\repos\RenderingEngine\vector.c;C:\repos\RenderingEngine\x64\Release\vector.obj

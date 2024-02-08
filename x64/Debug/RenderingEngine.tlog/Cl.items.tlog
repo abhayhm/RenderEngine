@@ -4,5 +4,7 @@ C:\repos\RenderingEngine\light.c;C:\repos\RenderingEngine\x64\Debug\light.obj
 C:\repos\RenderingEngine\Main.c;C:\repos\RenderingEngine\x64\Debug\Main.obj
 C:\repos\RenderingEngine\matrix.c;C:\repos\RenderingEngine\x64\Debug\matrix.obj
 C:\repos\RenderingEngine\mesh.c;C:\repos\RenderingEngine\x64\Debug\mesh.obj
+C:\repos\RenderingEngine\swap.c;C:\repos\RenderingEngine\x64\Debug\swap.obj
+C:\repos\RenderingEngine\texture.c;C:\repos\RenderingEngine\x64\Debug\texture.obj
 C:\repos\RenderingEngine\triangle.c;C:\repos\RenderingEngine\x64\Debug\triangle.obj
 C:\repos\RenderingEngine\vector.c;C:\repos\RenderingEngine\x64\Debug\vector.obj
