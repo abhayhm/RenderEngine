@@ -7,4 +7,5 @@ C:\repos\RenderingEngine\mesh.c;C:\repos\RenderingEngine\RenderingEngine\x64\Rel
 C:\repos\RenderingEngine\swap.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\swap.obj
 C:\repos\RenderingEngine\texture.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\texture.obj
 C:\repos\RenderingEngine\triangle.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\triangle.obj
+C:\repos\RenderingEngine\upng.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\upng.obj
 C:\repos\RenderingEngine\vector.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\vector.obj

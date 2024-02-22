@@ -148,6 +148,7 @@
     <ClCompile Include="swap.c" />
     <ClCompile Include="texture.c" />
     <ClCompile Include="triangle.c" />
+    <ClCompile Include="upng.c" />
     <ClCompile Include="vector.c" />
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +160,7 @@
     <ClInclude Include="swap.h" />
     <ClInclude Include="texture.h" />
     <ClInclude Include="triangle.h" />
+    <ClInclude Include="upng.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +172,9 @@
     <Text Include="assets\models\cube.obj">
       <FileType>Document</FileType>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\models\cube.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
