@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdint.h>
 #include "texture.h"
 
 int texture_width = 64;
@@ -10,8 +9,7 @@ uint32_t* mesh_texture = NULL;
 
 void load_png_texture_data(char* filename) {
     png_texture = upng_new_from_file(filename);
-    
-    if (NULL != png_texture) {
+    if (png_texture != NULL) {
         upng_decode(png_texture);
         if (upng_get_error(png_texture) == UPNG_EOK) {
             mesh_texture = (uint32_t*)upng_get_buffer(png_texture);
@@ -19,5 +17,4 @@ void load_png_texture_data(char* filename) {
             texture_height = upng_get_height(png_texture);
         }
     }
-    upng_free(png_texture);
-} 
+}

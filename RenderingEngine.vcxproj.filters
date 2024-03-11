@@ -93,5 +93,8 @@
     <Image Include="assets\models\cube.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="assets\models\f117.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

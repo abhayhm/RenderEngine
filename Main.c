@@ -31,7 +31,7 @@ mat4_t proj_matrix;
 ///////////////////////////////////////////////////////////////////////////////
 void setup(void) {
     // Initialize render mode and triangle culling method
-    render_method = RENDER_TEXTURED_WIRE;
+    render_method = RENDER_TEXTURED;
     cull_method = CULL_BACKFACE;
 
     // Allocate the required memory in bytes to hold the color buffer
@@ -54,11 +54,10 @@ void setup(void) {
     proj_matrix = mat4_make_perspective(fov, aspect, znear, zfar);
 
     // Loads the vertex and face values for the mesh data structure
-    //load_cube_mesh_data();
-    load_obj_file_data("./assets/cube.obj");
+    load_obj_file_data("./assets/models/drone.obj");
 
-    // Load the texture information form external file
-    load_png_texture_data("./assets/models/cube.png");
+    // Load the texture information from an external PNG file
+    load_png_texture_data("./assets/models/drone.png");
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -68,29 +67,29 @@ void process_input(void) {
     SDL_Event event;
     SDL_PollEvent(&event);
     switch (event.type) {
-    case SDL_QUIT:
-        is_running = false;
-        break;
-    case SDL_KEYDOWN:
-        if (event.key.keysym.sym == SDLK_ESCAPE)
+        case SDL_QUIT:
             is_running = false;
-        if (event.key.keysym.sym == SDLK_1)
-            render_method = RENDER_WIRE_VERTEX;
-        if (event.key.keysym.sym == SDLK_2)
-            render_method = RENDER_WIRE;
-        if (event.key.keysym.sym == SDLK_3)
-            render_method = RENDER_FILL_TRIANGLE;
-        if (event.key.keysym.sym == SDLK_4)
-            render_method = RENDER_FILL_TRIANGLE_WIRE;
-        if (event.key.keysym.sym == SDLK_5)
-            render_method = RENDER_TEXTURED;
-        if (event.key.keysym.sym == SDLK_6)
-            render_method = RENDER_TEXTURED_WIRE;
-        if (event.key.keysym.sym == SDLK_c)
-            cull_method = CULL_BACKFACE;
-        if (event.key.keysym.sym == SDLK_d)
-            cull_method = CULL_NONE;
-        break;
+            break;
+        case SDL_KEYDOWN:
+            if (event.key.keysym.sym == SDLK_ESCAPE)
+                is_running = false;
+            if (event.key.keysym.sym == SDLK_1)
+                render_method = RENDER_WIRE_VERTEX;
+            if (event.key.keysym.sym == SDLK_2)
+                render_method = RENDER_WIRE;
+            if (event.key.keysym.sym == SDLK_3)
+                render_method = RENDER_FILL_TRIANGLE;
+            if (event.key.keysym.sym == SDLK_4)
+                render_method = RENDER_FILL_TRIANGLE_WIRE;
+            if (event.key.keysym.sym == SDLK_5)
+                render_method = RENDER_TEXTURED;
+            if (event.key.keysym.sym == SDLK_6)
+                render_method = RENDER_TEXTURED_WIRE;
+            if (event.key.keysym.sym == SDLK_c)
+                cull_method = CULL_BACKFACE;
+            if (event.key.keysym.sym == SDLK_d)
+                cull_method = CULL_NONE;
+            break;
     }
 }
 
@@ -218,7 +217,7 @@ void update(void) {
             .points = {
                 { projected_points[0].x, projected_points[0].y, projected_points[0].z, projected_points[0].w },
                 { projected_points[1].x, projected_points[1].y, projected_points[1].z, projected_points[1].w },
-                { projected_points[2].x, projected_points[2].y, projected_points[2].z, projected_points[2].w }
+                { projected_points[2].x, projected_points[2].y, projected_points[2].z, projected_points[2].w },
             },
             .texcoords = {
                 { mesh_face.a_uv.u, mesh_face.a_uv.v },
