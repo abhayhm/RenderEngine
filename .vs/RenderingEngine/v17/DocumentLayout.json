@@ -11,68 +11,16 @@
       "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:triangle.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\swap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:swap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\light.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:light.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\display.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:display.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\upng.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:upng.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\display.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:display.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\mesh.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:mesh.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\texture.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:texture.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\vector.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:vector.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\swap.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:swap.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\light.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:light.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 186,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,123 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "swap.h",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\swap.h",
-              "RelativeDocumentMoniker": "swap.h",
-              "ToolTip": "C:\\repos\\RenderingEngine\\swap.h",
-              "RelativeToolTip": "swap.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-06T15:22:05.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "display.h",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\display.h",
-              "RelativeDocumentMoniker": "display.h",
-              "ToolTip": "C:\\repos\\RenderingEngine\\display.h",
-              "RelativeToolTip": "display.h",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2023-12-13T15:22:52.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "triangle.h",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\triangle.h",
-              "RelativeDocumentMoniker": "triangle.h",
-              "ToolTip": "C:\\repos\\RenderingEngine\\triangle.h",
-              "RelativeToolTip": "triangle.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAnwAsAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2023-12-13T08:25:54.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "light.h",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\light.h",
-              "RelativeDocumentMoniker": "light.h",
-              "ToolTip": "C:\\repos\\RenderingEngine\\light.h",
-              "RelativeToolTip": "light.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-25T13:20:55.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "texture.h",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\texture.h",
-              "RelativeDocumentMoniker": "texture.h",
-              "ToolTip": "C:\\repos\\RenderingEngine\\texture.h",
-              "RelativeToolTip": "texture.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-06T15:20:58.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "mesh.h",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\mesh.h",
-              "RelativeDocumentMoniker": "mesh.h",
-              "ToolTip": "C:\\repos\\RenderingEngine\\mesh.h",
-              "RelativeToolTip": "mesh.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2023-12-13T08:24:05.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "vector.h",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\vector.h",
-              "RelativeDocumentMoniker": "vector.h",
-              "ToolTip": "C:\\repos\\RenderingEngine\\vector.h",
-              "RelativeToolTip": "vector.h",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAAC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2023-12-13T16:41:51.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "matrix.h",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\matrix.h",
-              "RelativeDocumentMoniker": "matrix.h",
-              "ToolTip": "C:\\repos\\RenderingEngine\\matrix.h",
-              "RelativeToolTip": "matrix.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-09T14:06:47.549Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 214,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "triangle.c",
               "DocumentMoniker": "C:\\repos\\RenderingEngine\\triangle.c",
               "RelativeDocumentMoniker": "triangle.c",
               "ToolTip": "C:\\repos\\RenderingEngine\\triangle.c",
               "RelativeToolTip": "triangle.c",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAsBAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABEAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2023-12-27T07:32:43.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "mesh.c",
               "DocumentMoniker": "C:\\repos\\RenderingEngine\\mesh.c",
               "RelativeDocumentMoniker": "mesh.c",
@@ -218,11 +63,12 @@
               "RelativeToolTip": "mesh.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2023-12-13T08:25:16.274Z"
+              "WhenOpened": "2023-12-13T08:25:16.274Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "upng.c",
               "DocumentMoniker": "C:\\repos\\RenderingEngine\\upng.c",
               "RelativeDocumentMoniker": "upng.c",
@@ -230,7 +76,8 @@
               "RelativeToolTip": "upng.c",
               "ViewState": "AQIAAIYEAAAAAAAAAAD4v5MEAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-02-22T11:12:41.57Z"
+              "WhenOpened": "2024-02-22T11:12:41.57Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -240,82 +87,23 @@
               "RelativeDocumentMoniker": "Main.c",
               "ToolTip": "C:\\repos\\RenderingEngine\\Main.c",
               "RelativeToolTip": "Main.c",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADsAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2023-12-15T09:03:16.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "display.c",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\display.c",
-              "RelativeDocumentMoniker": "display.c",
-              "ToolTip": "C:\\repos\\RenderingEngine\\display.c",
-              "RelativeToolTip": "display.c",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAAAAAAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2023-12-13T15:23:29.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "vector.c",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\vector.c",
-              "RelativeDocumentMoniker": "vector.c",
-              "ToolTip": "C:\\repos\\RenderingEngine\\vector.c",
-              "RelativeToolTip": "vector.c",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAowJsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2023-12-13T15:29:04.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "texture.c",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\texture.c",
-              "RelativeDocumentMoniker": "texture.c",
-              "ToolTip": "C:\\repos\\RenderingEngine\\texture.c",
-              "RelativeToolTip": "texture.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-02-06T15:21:30.688Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "swap.c",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\swap.c",
-              "RelativeDocumentMoniker": "swap.c",
-              "ToolTip": "C:\\repos\\RenderingEngine\\swap.c",
-              "RelativeToolTip": "swap.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-02-06T15:22:23.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "matrix.c",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\matrix.c",
-              "RelativeDocumentMoniker": "matrix.c",
-              "ToolTip": "C:\\repos\\RenderingEngine\\matrix.c",
-              "RelativeToolTip": "matrix.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-01-09T14:08:29.631Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "light.c",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\light.c",
-              "RelativeDocumentMoniker": "light.c",
-              "ToolTip": "C:\\repos\\RenderingEngine\\light.c",
-              "RelativeToolTip": "light.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-01-25T13:23:19.536Z"
+              "DocumentIndex": 2,
+              "Title": "triangle.h",
+              "DocumentMoniker": "C:\\repos\\RenderingEngine\\triangle.h",
+              "RelativeDocumentMoniker": "triangle.h",
+              "ToolTip": "C:\\repos\\RenderingEngine\\triangle.h",
+              "RelativeToolTip": "triangle.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2023-12-13T08:25:54.131Z",
+              "EditorCaption": ""
             }
           ]
         }
