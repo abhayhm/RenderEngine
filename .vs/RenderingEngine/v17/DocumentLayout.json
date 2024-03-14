@@ -7,20 +7,32 @@
       "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:Main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\display.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:display.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\camera.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:camera.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\triangle.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:triangle.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\upng.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:upng.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|C:\\repos\\RenderingEngine\\mesh.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{651B80BE-7ED0-454D-9BF5-305636565791}|RenderingEngine.vcxproj|solutionrelative:mesh.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +42,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 186,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "display.h",
+              "DocumentMoniker": "C:\\repos\\RenderingEngine\\display.h",
+              "RelativeDocumentMoniker": "display.h",
+              "ToolTip": "C:\\repos\\RenderingEngine\\display.h",
+              "RelativeToolTip": "display.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-14T09:19:31.023Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -42,7 +67,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "matrix.h",
+              "DocumentMoniker": "C:\\repos\\RenderingEngine\\matrix.h",
+              "RelativeDocumentMoniker": "matrix.h",
+              "ToolTip": "C:\\repos\\RenderingEngine\\matrix.h",
+              "RelativeToolTip": "matrix.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-14T07:26:05.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "matrix.c",
+              "DocumentMoniker": "C:\\repos\\RenderingEngine\\matrix.c",
+              "RelativeDocumentMoniker": "matrix.c",
+              "ToolTip": "C:\\repos\\RenderingEngine\\matrix.c",
+              "RelativeToolTip": "matrix.c",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAQwIQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-14T07:15:33.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "camera.c",
+              "DocumentMoniker": "C:\\repos\\RenderingEngine\\camera.c",
+              "RelativeDocumentMoniker": "camera.c",
+              "ToolTip": "C:\\repos\\RenderingEngine\\camera.c",
+              "RelativeToolTip": "camera.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-14T06:36:39.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "camera.h",
+              "DocumentMoniker": "C:\\repos\\RenderingEngine\\camera.h",
+              "RelativeDocumentMoniker": "camera.h",
+              "ToolTip": "C:\\repos\\RenderingEngine\\camera.h",
+              "RelativeToolTip": "camera.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-14T06:36:26.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "triangle.c",
               "DocumentMoniker": "C:\\repos\\RenderingEngine\\triangle.c",
               "RelativeDocumentMoniker": "triangle.c",
@@ -50,34 +125,7 @@
               "RelativeToolTip": "triangle.c",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAABEAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2023-12-27T07:32:43.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "mesh.c",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\mesh.c",
-              "RelativeDocumentMoniker": "mesh.c",
-              "ToolTip": "C:\\repos\\RenderingEngine\\mesh.c",
-              "RelativeToolTip": "mesh.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2023-12-13T08:25:16.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "upng.c",
-              "DocumentMoniker": "C:\\repos\\RenderingEngine\\upng.c",
-              "RelativeDocumentMoniker": "upng.c",
-              "ToolTip": "C:\\repos\\RenderingEngine\\upng.c",
-              "RelativeToolTip": "upng.c",
-              "ViewState": "AQIAAIYEAAAAAAAAAAD4v5MEAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-02-22T11:12:41.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2023-12-27T07:32:43.368Z"
             },
             {
               "$type": "Document",
@@ -87,14 +135,14 @@
               "RelativeDocumentMoniker": "Main.c",
               "ToolTip": "C:\\repos\\RenderingEngine\\Main.c",
               "RelativeToolTip": "Main.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0BAAAAAAAA",
+              "ViewState": "AQIAANwAAAAAAAAAAAAQwOgAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2023-12-15T09:03:16.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "triangle.h",
               "DocumentMoniker": "C:\\repos\\RenderingEngine\\triangle.h",
               "RelativeDocumentMoniker": "triangle.h",
@@ -102,8 +150,7 @@
               "RelativeToolTip": "triangle.h",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2023-12-13T08:25:54.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2023-12-13T08:25:54.131Z"
             }
           ]
         }

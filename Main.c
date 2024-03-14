@@ -8,6 +8,7 @@
 #include "vector.h"
 #include "matrix.h"
 #include "light.h"
+#include "camera.h"
 #include "triangle.h"
 #include "texture.h"
 #include "mesh.h"
@@ -24,9 +25,14 @@ int num_triangles_to_render = 0;
 ///////////////////////////////////////////////////////////////////////////////
 bool is_running = false;
 int previous_frame_time = 0;
+float delta_time = 0;
 
-vec3_t camera_position = { 0, 0, 0 };
+///////////////////////////////////////////////////////////////////////////////
+// Declaration of our global transformation matrices
+///////////////////////////////////////////////////////////////////////////////
+mat4_t world_matrix;
 mat4_t proj_matrix;
+mat4_t view_matrix;
 
 ///////////////////////////////////////////////////////////////////////////////
 // Setup function to initialize variables and game objects
@@ -57,10 +63,10 @@ void setup(void) {
     proj_matrix = mat4_make_perspective(fov, aspect, znear, zfar);
 
     // Loads the vertex and face values for the mesh data structure
-    load_obj_file_data("./assets/models/drone.obj");
+    load_obj_file_data("./assets/models/cube.obj");
 
     // Load the texture information from an external PNG file
-    load_png_texture_data("./assets/models/drone.png");
+    load_png_texture_data("./assets/models/cube.png");
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -90,8 +96,24 @@ void process_input(void) {
                 render_method = RENDER_TEXTURED_WIRE;
             if (event.key.keysym.sym == SDLK_c)
                 cull_method = CULL_BACKFACE;
-            if (event.key.keysym.sym == SDLK_d)
+            if (event.key.keysym.sym == SDLK_x)
                 cull_method = CULL_NONE;
+            if (event.key.keysym.sym == SDLK_DOWN) {
+                camera.forward_velocity = vec3_mul(camera.direction, 5.0 * delta_time);
+                camera.position = vec3_sub(camera.position, camera.forward_velocity);
+            }
+            if (event.key.keysym.sym == SDLK_UP) {
+                camera.forward_velocity = vec3_mul(camera.direction, 5.0 * delta_time);
+                camera.position = vec3_add(camera.position, camera.forward_velocity);
+            } 
+            if (event.key.keysym.sym == SDLK_a)
+                camera.yaw_angle += 1.0 * delta_time;
+            if (event.key.keysym.sym == SDLK_w)
+                camera.position.y += 3.0 * delta_time;
+            if (event.key.keysym.sym == SDLK_s)
+                camera.position.y -= 3.0 * delta_time;
+            if (event.key.keysym.sym == SDLK_d)
+                camera.yaw_angle -= 1.0 * delta_time;
             break;
     }
 }
@@ -108,16 +130,30 @@ void update(void) {
         SDL_Delay(time_to_wait);
     }
 
+    // Get a delta time factor converted to seconds to be used to update our game obj
+    delta_time = (SDL_GetTicks() - previous_frame_time) / 1000.0;
     previous_frame_time = SDL_GetTicks();
 
     // Initialize the counter of triangles to render for current frame
     num_triangles_to_render = 0;
 
     // Change the mesh scale, rotation, and translation values per animation frame
-    mesh.rotation.x += -0.004;
-    mesh.rotation.y += 0.000;
-    mesh.rotation.z += 0.000;
+    mesh.rotation.x += 0.0 * delta_time;
+    mesh.rotation.y += 0.0 * delta_time;
+    mesh.rotation.z += 0.0 * delta_time;
     mesh.translation.z = 5.0;
+
+    // Initialize the target looking at the positive z-axis
+    vec3_t target = { 0, 0, 1 };
+    mat4_t camera_yaw_rotation = mat4_make_rotation_y(camera.yaw_angle);
+    camera.direction = vec3_from_vec4(mat4_mul_vec4(camera_yaw_rotation, vec4_from_vec3(target)));
+    
+    // Offset the camera position in the direction where the camera is pointing at
+    target = vec3_add(camera.position, camera.direction);
+    vec3_t up_direction = { 0, 1, 0 };
+
+    // Create the view matrix
+    view_matrix = mat4_look_at(camera.position, target, up_direction);
 
     // Create scale, rotation, and translation matrices that will be used to multiply the mesh vertices
     mat4_t scale_matrix = mat4_make_scale(mesh.scale.x, mesh.scale.y, mesh.scale.z);
@@ -142,8 +178,8 @@ void update(void) {
         for (int j = 0; j < 3; j++) {
             vec4_t transformed_vertex = vec4_from_vec3(face_vertices[j]);
 
-            // Create a World Matrix combining scale, rotation, and translation matrices
-            mat4_t world_matrix = mat4_identity();
+            // World Matrix combining scale, rotation, and translation matrices
+            world_matrix = mat4_identity();
 
             // Order matters: First scale, then rotate, then translate. [T]*[R]*[S]*v
             world_matrix = mat4_mul_mat4(scale_matrix, world_matrix);
@@ -154,6 +190,9 @@ void update(void) {
 
             // Multiply the world matrix by the original vector
             transformed_vertex = mat4_mul_vec4(world_matrix, transformed_vertex);
+
+            // Multiply the view matrix by the original vector
+            transformed_vertex = mat4_mul_vec4(view_matrix, transformed_vertex);
 
             // Save transformed vertex in the array of transformed vertices
             transformed_vertices[j] = transformed_vertex;
@@ -175,7 +214,8 @@ void update(void) {
         vec3_normalize(&normal);
 
         // Find the vector between vertex A in the triangle and the camera origin
-        vec3_t camera_ray = vec3_sub(camera_position, vector_a);
+        vec3_t origin = { 0, 0, 0 };
+        vec3_t camera_ray = vec3_sub(origin, vector_a);
 
         // Calculate how aligned the camera ray is with the face normal (using dot product)
         float dot_normal_camera = vec3_dot(normal, camera_ray);

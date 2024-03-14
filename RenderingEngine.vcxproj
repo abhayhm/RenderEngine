@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="array.c" />
+    <ClCompile Include="camera.c" />
     <ClCompile Include="display.c" />
     <ClCompile Include="light.c" />
     <ClCompile Include="Main.c" />
@@ -153,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="array.h" />
+    <ClInclude Include="camera.h" />
     <ClInclude Include="display.h" />
     <ClInclude Include="light.h" />
     <ClInclude Include="matrix.h" />
@@ -162,20 +164,6 @@
     <ClInclude Include="triangle.h" />
     <ClInclude Include="upng.h" />
     <ClInclude Include="vector.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="assets\models\f22.obj">
-      <FileType>Document</FileType>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="assets\models\cube.obj">
-      <FileType>Document</FileType>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="assets\models\cube.png" />
-    <Image Include="assets\models\f117.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
