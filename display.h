@@ -11,7 +11,7 @@
 enum cull_method {
     CULL_NONE,
     CULL_BACKFACE
-} cull_method;
+} cull_method_enum;
 
 enum render_method {
     RENDER_WIRE,
@@ -20,17 +20,21 @@ enum render_method {
     RENDER_FILL_TRIANGLE_WIRE,
     RENDER_TEXTURED,
     RENDER_TEXTURED_WIRE
-} render_method;
+} render_method_enum;
 
-extern SDL_Window* window;
-extern SDL_Renderer* renderer;
-extern uint32_t* color_buffer;
-extern float* z_buffer;
-extern SDL_Texture* color_buffer_texture;
-extern int window_width;
-extern int window_height;
+bool init_window(void);
+int get_window_height(void);
+int get_window_height(void);
 
-bool initialize_window(void);
+void set_render_method(int method);
+void set_cull_method(int method);
+bool is_cull_backface(void);
+
+bool render_filled_triangles();
+bool render_textured_triangles();
+bool render_wireframe();
+bool render_vertex();
+
 void draw_grid(void);
 void draw_pixel(int x, int y, uint32_t color);
 void draw_line(int x0, int y0, int x1, int y1, uint32_t color);
@@ -38,6 +42,10 @@ void draw_rect(int x, int y, int width, int height, uint32_t color);
 void render_color_buffer(void);
 void clear_color_buffer(uint32_t color);
 void clear_z_buffer(void);
+
+float get_from_zbuffer(int x, int y);
+void set_zbuffer_at(int x, int y, float value);
+
 void destroy_window(void);
 
 #endif

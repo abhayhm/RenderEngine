@@ -1,15 +1,28 @@
 #include <stdio.h>
 #include "display.h"
 
-SDL_Window* window = NULL;
-SDL_Renderer* renderer = NULL;
-uint32_t* color_buffer = NULL;
-float* z_buffer = NULL;
-SDL_Texture* color_buffer_texture = NULL;
-int window_width = 800;
-int window_height = 600;
+static SDL_Window* window = NULL;
+static SDL_Renderer* renderer = NULL;
 
-bool initialize_window(void) {
+static uint32_t* color_buffer = NULL;
+static float* z_buffer = NULL;
+
+static SDL_Texture* color_buffer_texture = NULL;
+static int window_width = 800;
+static int window_height = 600;
+
+static int render_method = RENDER_WIRE;
+static int cull_method = CULL_BACKFACE;
+
+int get_window_width(void) {
+    return window_width;
+}
+
+int get_window_height(void) {
+    return window_height;
+}
+
+bool init_window(void) {
     if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
         fprintf(stderr, "Error initializing SDL.\n");
         return false;
@@ -42,7 +55,58 @@ bool initialize_window(void) {
         return false;
     }
 
+    // Allocate the required memory in bytes to hold the color buffer
+    color_buffer = (uint32_t*)malloc(sizeof(uint32_t) * window_width * window_height);
+    z_buffer = (float*)malloc(sizeof(float) * window_width * window_height);
+
+    // Creating a SDL texture that is used to display the color buffer
+    color_buffer_texture = SDL_CreateTexture(
+        renderer,
+        SDL_PIXELFORMAT_RGBA32,
+        SDL_TEXTUREACCESS_STREAMING,
+        window_width,
+        window_height
+    );
+
     return true;
+}
+
+void set_render_method(int method) {
+    render_method = method;
+}
+
+void set_cull_method(int method) {
+    cull_method = method;
+}
+
+bool is_cull_backface(void) {
+    return cull_method == CULL_BACKFACE;
+}
+
+bool render_filled_triangles() {
+    return (
+        render_method == RENDER_FILL_TRIANGLE
+        || render_method == RENDER_FILL_TRIANGLE_WIRE
+        );
+}
+
+bool render_textured_triangles() {
+    return (
+        render_method == RENDER_TEXTURED 
+        || render_method == RENDER_TEXTURED_WIRE
+        );
+}
+
+bool render_wireframe() {
+    return (
+        render_method == RENDER_WIRE 
+        || render_method == RENDER_WIRE_VERTEX 
+        || render_method == RENDER_FILL_TRIANGLE_WIRE 
+        || render_method == RENDER_TEXTURED_WIRE
+        );
+}
+bool render_vertex() {
+    return (render_method == RENDER_WIRE_VERTEX);
 }
 
 void draw_grid(void) {
@@ -54,9 +118,10 @@ void draw_grid(void) {
 }
 
 void draw_pixel(int x, int y, uint32_t color) {
-    if (x >= 0 && x < window_width && y >= 0 && y < window_height) {
-        color_buffer[(window_width * y) + x] = color;
+    if (x < 0 || x >= window_width || y < 0 || y >= window_height) {
+        return;
     }
+    color_buffer[(window_width * y) + x] = color;
 }
 
 void draw_line(int x0, int y0, int x1, int y1, uint32_t color) {
@@ -96,25 +161,38 @@ void render_color_buffer(void) {
         (int)(window_width * sizeof(uint32_t))
     );
     SDL_RenderCopy(renderer, color_buffer_texture, NULL, NULL);
+    SDL_RenderPresent(renderer);
 }
 
 void clear_color_buffer(uint32_t color) {
-    for (int y = 0; y < window_height; y++) {
-        for (int x = 0; x < window_width; x++) {
-            color_buffer[(window_width * y) + x] = color;
-        }
+    for (int i = 0; i < window_width * window_height; i++) {
+        color_buffer[i] = color;
     }
 }
 
 void clear_z_buffer(void) {
-    for (int y = 0; y < window_height; y++) {
-        for (int x = 0; x < window_width; x++) {
-            z_buffer[(window_width * y) + x] = 1.0;
-        }
+    for (int i = 0; i < window_width * window_height; i++) {
+        z_buffer[i] = 1.0;
     }
 }
 
+float get_from_zbuffer(int x, int y) {
+    if (x < 0 || x >= window_width || y < 0 || y >= window_height) {
+        return 1.0;
+    }
+    return z_buffer[(window_width * y) + x];
+}
+
+void set_zbuffer_at(int x, int y, float value) {
+    if (x < 0 || x >= window_width || y < 0 || y >= window_height) {
+        return;
+    }
+    z_buffer[(window_width * y) + x] = value;
+}
+
 void destroy_window(void) {
+    free(z_buffer);
+    free(color_buffer);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
