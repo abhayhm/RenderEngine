@@ -1,5 +1,6 @@
 C:\repos\RenderingEngine\array.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\array.obj
 C:\repos\RenderingEngine\camera.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\camera.obj
+C:\repos\RenderingEngine\clipping.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\clipping.obj
 C:\repos\RenderingEngine\display.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\display.obj
 C:\repos\RenderingEngine\light.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\light.obj
 C:\repos\RenderingEngine\Main.c;C:\repos\RenderingEngine\RenderingEngine\x64\Release\Main.obj

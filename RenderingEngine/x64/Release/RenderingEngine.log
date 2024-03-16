@@ -1,49 +1,49 @@
 ﻿  Main.c
-C:\repos\RenderingEngine\Main.c(59,11): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(61,11): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\repos\RenderingEngine\Main.c(102,74): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(106,74): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(110,41): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(112,42): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(114,42): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(116,41): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(134,57): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(141,28): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(142,28): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(143,28): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(242,38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(243,38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(246,38): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(247,38): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\repos\RenderingEngine\Main.c(294,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(294,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(295,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(295,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(296,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(296,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(304,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(304,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(305,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(305,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(306,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(306,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(314,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(314,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(315,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(315,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(316,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(316,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(323,44): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(323,70): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(324,44): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(324,70): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(325,44): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(325,70): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\repos\RenderingEngine\Main.c(351,16): warning C4026: function declared with formal parameter list
-  camera.c
+C:\repos\RenderingEngine\Main.c(62,11): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\repos\RenderingEngine\Main.c(63,51): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(64,11): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\repos\RenderingEngine\Main.c(108,74): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(112,74): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(116,41): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(118,42): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(120,42): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(122,41): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(140,57): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(147,28): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(148,28): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(149,28): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(272,42): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(273,42): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(276,42): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(277,42): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\repos\RenderingEngine\Main.c(323,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(323,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(324,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(324,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(325,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(325,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(333,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(333,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(334,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(334,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(335,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(335,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(343,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(343,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(344,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(344,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(345,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(345,57): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(352,44): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(352,70): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(353,44): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(353,70): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(354,44): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(354,70): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\repos\RenderingEngine\Main.c(380,16): warning C4026: function declared with formal parameter list
   Generating code
-  7 of 86 functions ( 8.1%) were compiled, the rest were copied from previous compilation.
+  4 of 95 functions ( 4.2%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   RenderingEngine.vcxproj -> C:\repos\RenderingEngine\x64\Release\RenderingEngine.exe
